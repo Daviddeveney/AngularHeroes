@@ -69,7 +69,7 @@ import {OnInit} from '@angular/core';
   }
 `
 ],
-providers: [HeroService] // This will tell angular to create a fresh instance of the HeroService when it creates AppComponent The App component can then use this service.
+providers: [] // This will tell angular to create a fresh instance of the HeroService when it creates AppComponent The App component can then use this service.
 })
 export class HeroesComponent implements OnInit { 
 
