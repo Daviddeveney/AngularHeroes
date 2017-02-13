@@ -14,7 +14,7 @@ var HeroService = (function () {
     function HeroService() {
     }
     HeroService.prototype.getHeroes = function () {
-        return mock_heroes_1.HEROES;
+        return Promise.resolve(mock_heroes_1.HEROES);
     };
     HeroService = __decorate([
         core_1.Injectable(), 
@@ -23,4 +23,10 @@ var HeroService = (function () {
     return HeroService;
 }());
 exports.HeroService = HeroService;
+// @Injectable()
+// export class HeroService {
+//     getHeroes(): Promise <Hero[]> {
+//         return Promise.resolve(HEROES);
+//     }
+// } 
 //# sourceMappingURL=hero.service.js.map
